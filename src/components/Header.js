@@ -1,22 +1,45 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 
 class Header extends React.Component {
-    render() {
-        return (
-            <section id="header">
-                <div className="inner">
-                    <span className="icon major fa-cloud"></span>
-                    <h1>Hi, I'm <strong>Photon</strong>, another fine<br />
-                    little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
-                    <p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-                    lobortis feugiat sapien sed etiam volutpat accumsan.</p>
-                    <ul className="actions">
-                        <li><a href="#one" className="button scrolly">Discover</a></li>
-                    </ul>
-                </div>
-            </section>
-        )
-    }
+  handleClick = e => {
+    e.preventDefault()
+    const { sectionOneRef } = this.props
+    const sectionOneDomNode = ReactDOM.findDOMNode(sectionOneRef.current)
+    window.scrollTo({ top: sectionOneDomNode.offsetTop, behavior: 'smooth' })
+  }
+
+  render() {
+    return (
+      <section id="header">
+        <div className="inner">
+          <div style={{ margin: 'auto' }}>
+            <span className="icon major fab fa-react" />
+            <h1>
+              Hi, I'm <strong>Phuoc Nguyen!</strong>
+            </h1>
+          </div>
+          {/* <p>
+            I am a passionate programmer who takes pleasure in tinkering with
+            various computer-related fields. <br />Before choosing web development as
+            my main career path, I have had experiences in game programming and
+            robot controlling.
+          </p> */}
+          <ul className="actions">
+            <li>
+              <a
+                href="#one"
+                className="button scrolly"
+                onClick={this.handleClick}
+              >
+                Discover
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    )
+  }
 }
 
 export default Header

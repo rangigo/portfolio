@@ -1,40 +1,37 @@
-import React from "react";
-import "../assets/scss/main.scss";
+import React from 'react'
+import '../assets/scss/main.scss'
 
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from './Header'
+import Footer from './Footer'
 
 class Template extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        loading: 'is-loading'
-      }
-    }
+  state = {
+    loading: 'is-loading',
+  }
 
-    componentDidMount () {
-      this.timeoutId = setTimeout(() => {
-          this.setState({loading: ''});
-      }, 100);
-    }
+  componentDidMount() {
+    this.timeoutId = setTimeout(() => {
+      this.setState({ loading: '' })
+    }, 100)
+  }
 
-    componentWillUnmount () {
-      if (this.timeoutId) {
-          clearTimeout(this.timeoutId);
-      }
+  componentWillUnmount() {
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId)
     }
+  }
 
-    render() {
-        const { children } = this.props;
+  render() {
+    const { children, sectionOneRef } = this.props
 
-        return (
-            <div className={`body ${this.state.loading}`}>
-                <Header />
-                {children}
-                <Footer />
-            </div>
-        );
-    }
+    return (
+      <div className={`body ${this.state.loading}`}>
+        <Header sectionOneRef={sectionOneRef} />
+        {children}
+        <Footer />
+      </div>
+    )
+  }
 }
 
-export default Template;
+export default Template
