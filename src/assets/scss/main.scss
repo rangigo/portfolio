@@ -497,9 +497,15 @@ input[type='radio'] {
     }
   }
 
+  &.style7 {
+    &:before {
+      color: inherit;
+    }
+  }
+
   &.major {
     @include icon;
-    color: _palette(fg-bold);
+    // color: _palette(fg-bold);
     cursor: default;
     display: inline-block;
     margin: 0 0 (_size(element-margin) * 0.75) 0;
@@ -508,6 +514,14 @@ input[type='radio'] {
       font-size: 4em;
       line-height: 1em;
     }
+  }
+
+  svg {
+    width: 4em;
+    height: 100%;
+    transform: rotate(-45deg);
+    display: inline-block;
+    line-height: 1em;
   }
 }
 
@@ -616,9 +630,11 @@ ul {
   &.major-icons {
     list-style: none;
     padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     li {
-      display: inline-block;
       padding: 2.5em;
       text-align: center;
 
@@ -720,6 +736,34 @@ ul {
           padding: 0 0 0 (_size(element-margin) * 0.25);
         }
       }
+    }
+  }
+}
+
+
+.skills {
+  background-color: #333;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 1.5em;
+}
+
+.minor-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+
+  .icon {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+    &.minor {
+      font-size: 2.3em;
+    }
+    svg {
+      width: 1em;
+      transform: rotate(0deg);
     }
   }
 }
@@ -969,7 +1013,7 @@ button,
 
   .icon {
     &.major {
-      color: _palette(dark, fg-bold);
+      // color: _palette(dark, fg-bold);
     }
   }
 }
@@ -1038,7 +1082,7 @@ button,
   }
 
   .inner {
-		height: 100%;
+    height: 100%;
     @include vendor('transition', ('transform 1.5s ease', 'opacity 2s ease'));
     @include vendor('transition-delay', '0.25s');
     @include vendor('transform', 'scale(1)');
@@ -1046,8 +1090,8 @@ button,
     position: relative;
     z-index: 1;
     display: flex;
-		flex-flow: column;
-		justify-content: center;
+    flex-flow: column;
+    justify-content: center;
 
     .actions {
       @include vendor('transition', 'transform 1.25s ease');

@@ -14,18 +14,12 @@ class Header extends React.Component {
       <section id="header">
         <div className="inner">
           <div style={{ margin: 'auto' }}>
-            <span className="icon major fab fa-react" />
+            <span className="icon major devicon-react-original colored" />
             <h1>
               Hi, I'm <strong>Phuoc Nguyen!</strong> 
             </h1>
-            <h3>A Front-end to Full-stack Developer.</h3>
+            <h3>A Front-End to Full-Stack Developer.</h3>
           </div>
-          {/* <p>
-            I am a passionate programmer who takes pleasure in tinkering with
-            various computer-related fields. <br />Before choosing web development as
-            my main career path, I have had experiences in game programming and
-            robot controlling.
-          </p> */}
           <ul className="actions">
             <li>
               <a
