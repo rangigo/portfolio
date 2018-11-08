@@ -16,8 +16,9 @@ class Header extends React.Component {
           <div style={{ margin: 'auto' }}>
             <span className="icon major fab fa-react" />
             <h1>
-              Hi, I'm <strong>Phuoc Nguyen!</strong>
+              Hi, I'm <strong>Phuoc Nguyen!</strong> 
             </h1>
+            <h3>A Front-end to Full-stack Developer.</h3>
           </div>
           {/* <p>
             I am a passionate programmer who takes pleasure in tinkering with

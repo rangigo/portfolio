@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
 import pic01 from '../assets/images/pic01.jpg'
+import cv from '../assets/images/cv.jpeg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
@@ -22,21 +23,23 @@ class Homepage extends React.Component {
             <div className="col-6">
               <header className="major">
                 <h2>
-                  Lorem ipsum dolor adipiscing
-                  <br />
-                  amet dolor consequat
+                  <strong>About me</strong> 👨🏻‍💻
                 </h2>
               </header>
               <p>
-                Adipiscing a commodo ante nunc accumsan et interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis sed volutpat
-                aclacus nascetur ac non. Lorem curae et ante amet sapien sed
-                tempus adipiscing id accumsan.
+                I am a passionate programmer who takes pleasure in tinkering
+                with various computer-related fields. Before choosing web
+                development as my main career path, I have had experiences in
+                game programming and robot controlling. <br />I am proficient at
+                building progressive web application & scalable websites. As
+                someone who takes responsibility for my own personal
+                development, I am continually evaluating and upgrading my skills
+                to stay with the latest cutting-edge web technologies.
               </p>
             </div>
             <div className="col-6">
               <span className="image fit">
-                <img src={pic01} alt="" />
+                <img src={cv} alt="avatar" />
               </span>
             </div>
           </div>
