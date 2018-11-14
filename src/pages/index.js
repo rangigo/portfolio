@@ -1,16 +1,23 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import Layout from '../components/layout'
 
-import pic01 from '../assets/images/pic01.jpg'
 import cv from '../assets/images/cv.jpeg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
+import Project from '../components/Project'
+import projects from '../data/data'
 
 class Homepage extends React.Component {
   sectionOneRef = React.createRef()
+
+  componentDidMount() {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    })
+  }
 
   render() {
     const siteTitle = 'Panigo'
@@ -25,24 +32,33 @@ class Homepage extends React.Component {
         </Helmet>
         <section id="one" className="main style1" ref={this.sectionOneRef}>
           <div className="grid-wrapper">
-            <div className="col-6">
+            <div className="col-6" data-aos="fade-right">
               <header className="major">
                 <h2>
-                  <strong>&#60;About me 👨🏻‍💻 &#47;&#62;</strong>
+                  <strong>
+                    &#60;About me{' '}
+                    <span role="img" aria-label="about">
+                      👨🏻‍💻
+                    </span>{' '}
+                    &#47;&#62;
+                  </strong>
                 </h2>
               </header>
               <p>
                 I am a passionate programmer who takes pleasure in tinkering
                 with various computer-related fields. Before choosing web
                 development as my main career path, I have had experiences in
-                game programming and robot controlling. <br />I am proficient at
-                building progressive web application & scalable websites. As
-                someone who takes responsibility for my own personal
-                development, I am continually evaluating and upgrading my skills
-                to stay with the latest cutting-edge web technologies.
+                game programming and robot controlling.
+              </p>
+              <p>
+                I am also proficient at building progressive web application &
+                scalable websites. As someone who takes responsibility for my
+                own personal development, I am continually evaluating and
+                upgrading my skills to stay with the latest cutting-edge web
+                technologies.
               </p>
             </div>
-            <div className="col-6">
+            <div className="col-6" data-aos="fade-left">
               <span className="image fit">
                 <img src={cv} alt="avatar" />
               </span>
@@ -54,10 +70,10 @@ class Homepage extends React.Component {
           <div className="grid-wrapper">
             <div className="col-6">
               <ul className="major-icons">
-                <li>
+                <li data-aos="zoom-out">
                   <span className="icon major devicon-react-original colored" />
                 </li>
-                <li>
+                <li data-aos="zoom-out">
                   <span className="icon major">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -71,16 +87,16 @@ class Homepage extends React.Component {
                     </svg>
                   </span>
                 </li>
-                <li>
+                <li data-aos="zoom-out">
                   <span className="icon major devicon-nodejs-plain colored" />
                 </li>
                 <li>
                   <span className="icon major devicon-sass-original colored" />
                 </li>
-                <li>
+                <li data-aos="zoom-out">
                   <span className="icon major devicon-javascript-plain colored" />
                 </li>
-                <li>
+                <li data-aos="zoom-out">
                   <span className="icon major">
                     <svg
                       version="1.1"
@@ -236,24 +252,30 @@ class Homepage extends React.Component {
               </ul>
             </div>
             <div className="col-6">
-              <header className="major">
+              <header className="major" data-aos="zoom-out">
                 <h2>
-                  <strong>&#60;Skills ⚙️&#47;&#62;</strong>
+                  <strong>
+                    &#60;Skills{' '}
+                    <span role="img" aria-label="skills">
+                      ⚙️
+                    </span>
+                    &#47;&#62;
+                  </strong>
                 </h2>
               </header>
-              <p>
+              <p data-aos="zoom-out">
                 I love development and design. I'm most comfortable with
                 front-end technologies like React and Redux, but I have also
                 done a lot of work in back-end technologies like Node.js and
                 Java EE.
               </p>
-              <div className="skills">
+              <div className="skills" data-aos="zoom-out">
                 <h4>Front-End</h4>
                 <div className="minor-icons">
                   <span className="icon minor devicon-react-original colored" />
                   <span className="icon minor devicon-javascript-plain colored" />
                   <span className="icon minor devicon-sass-original colored" />
-                  <span className="icon minor devicon-jquery-plain colored" />
+                  <span className="icon minor devicon-jquery-plain-wordmark colored" />
                   <span className="icon minor devicon-bootstrap-plain colored" />
                   <span className="icon minor devicon-html5-plain colored" />
                   <span className="icon minor devicon-css3-plain colored" />
@@ -334,76 +356,38 @@ class Homepage extends React.Component {
         </section>
 
         <section id="three" className="main style1 special">
-          <div className="grid-wrapper">
-            <div className="col-12">
+          <div style={{ flex: 0.8 }}>
+            <div className="projects-header">
               <header className="major">
-                <h2>Adipiscing amet consequat</h2>
+                <h2>
+                  <strong>
+                    &#60;Projects{' '}
+                    <span role="img" aria-label="about">
+                      📋
+                    </span>{' '}
+                    &#47;&#62;
+                  </strong>
+                </h2>
               </header>
               <p>
-                Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.
+                Most of my work is in web development, but I am also really
+                proud of my game & robot projects.
               </p>
             </div>
-
-            <div className="col-4">
-              <span className="image fit">
-                <img src={pic02} alt="" />
-              </span>
-              <h3>Magna feugiat lorem</h3>
-              <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
-              </p>
-              <ul className="actions">
-                <li>
-                  <a href="#" className="button">
-                    More
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-4">
-              <span className="image fit">
-                <img src={pic03} alt="" />
-              </span>
-              <h3>Magna feugiat lorem</h3>
-              <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
-              </p>
-              <ul className="actions">
-                <li>
-                  <a href="#" className="button">
-                    More
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-4">
-              <span className="image fit">
-                <img src={pic04} alt="" />
-              </span>
-              <h3>Magna feugiat lorem</h3>
-              <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
-              </p>
-              <ul className="actions">
-                <li>
-                  <a href="#" className="button">
-                    More
-                  </a>
-                </li>
-              </ul>
+            <div className="projects">
+              {projects.map(el => (
+                <Project {...el} key={el.link} />
+              ))}
             </div>
           </div>
         </section>
 
-        <section id="four" className="main style2 special">
+        {/* <section id="four" className="main style2 special">
           <div className="container">
             <header className="major">
-              <h2>Ipsum feugiat consequat?</h2>
+              <h2>Contact</h2>
             </header>
-            <p>Sed lacus nascetur ac ante amet sapien.</p>
+            <p>Thanks for visiting my website! If you have an offer or just want to chat, send me an email!</p>
             <ul className="actions uniform">
               <li>
                 <a href="#" className="button special">
@@ -417,7 +401,7 @@ class Homepage extends React.Component {
               </li>
             </ul>
           </div>
-        </section>
+        </section> */}
       </Layout>
     )
   }

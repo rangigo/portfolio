@@ -2,21 +2,26 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 class Header extends React.Component {
+  headerRef = React.createRef()
+  
   handleClick = e => {
     e.preventDefault()
     const { sectionOneRef } = this.props
     const sectionOneDomNode = ReactDOM.findDOMNode(sectionOneRef.current)
-    window.scrollTo({ top: sectionOneDomNode.offsetTop, behavior: 'smooth' })
+    window.scrollTo({
+      top: sectionOneDomNode.offsetTop,
+      behavior: 'smooth',
+    })
   }
 
   render() {
     return (
-      <section id="header">
+      <section id="header" ref={this.headerRef}>
         <div className="inner">
           <div style={{ margin: 'auto' }}>
             <span className="icon major devicon-react-original colored" />
             <h1>
-              Hi, I'm <strong>Phuoc Nguyen!</strong> 
+              Hi, I'm <strong>Phuoc Nguyen!</strong>
             </h1>
             <h3>A Front-End to Full-Stack Developer.</h3>
           </div>
