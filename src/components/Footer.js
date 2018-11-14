@@ -4,11 +4,13 @@ class Footer extends React.Component {
   render() {
     return (
       <section id="footer">
+        <p style={{ marginTop: '0', marginBottom: '20px' }}>Keep in touch with me</p>
         <ul className="icons">
           <li>
             <a
               href="https://twitter.com/panigo37"
               target="_blank"
+              rel="noopener noreferrer"
               className="icon alt fab fa-twitter"
             >
               <span className="label">Twitter</span>
@@ -18,6 +20,7 @@ class Footer extends React.Component {
             <a
               href="https://www.linkedin.com/in/panigo/"
               target="_blank"
+              rel="noopener noreferrer"
               className="icon alt fab fa-linkedin"
             >
               <span className="label">LinkedIn</span>
@@ -27,6 +30,7 @@ class Footer extends React.Component {
             <a
               href="https://www.instagram.com/_p3.7/"
               target="_blank"
+              rel="noopener noreferrer"
               className="icon alt fab fa-instagram"
             >
               <span className="label">Instagram</span>
@@ -36,6 +40,7 @@ class Footer extends React.Component {
             <a
               href="https://github.com/rangigo"
               target="_blank"
+              rel="noopener noreferrer"
               className="icon alt fab fa-github"
             >
               <span className="label">GitHub</span>
@@ -44,7 +49,6 @@ class Footer extends React.Component {
           <li>
             <a
               href="mailto:panigo3797@gmail.com"
-              target="_blank"
               className="icon alt fa fa-envelope"
             >
               <span className="label">Email</span>

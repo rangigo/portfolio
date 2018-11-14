@@ -13,7 +13,8 @@
     "node-sass": "^4.9.3",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-tooltip": "^3.9.0"
   },
   "keywords": [
     "gatsby"

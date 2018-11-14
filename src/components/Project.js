@@ -17,7 +17,6 @@ const Project = ({
   const backgroundColorStyle = gradientBg
     ? { background: backgroundColor }
     : { backgroundColor }
-  console.log(backgroundColorStyle)
   return (
     <div
       className="project"
