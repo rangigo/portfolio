@@ -58,11 +58,14 @@ class Homepage extends React.Component {
                 game programming and robot controlling.
               </p>
               <p>
-                I am also proficient at building progressive web application &
-                scalable websites. As someone who takes responsibility for my
-                own personal development, I am continually evaluating and
-                upgrading my skills to stay with the latest cutting-edge web
-                technologies.
+                JavaScript is my bread and butter as it allowed me to get things into action quickly because of its flexibility.
+                 In addition to it, I am also familiar with Java/JavaEE, C# and .NET as server-side scripting languages,
+                  and exposed to RabbitMQ in the context of micro-services system.
+                  With those tools at my hand, progressive web application & scalable websites are often the final goals that I want to achieve while developing software.
+              </p>
+              <p>
+                As someone who takes responsibility for my own personal development,
+                 I am continually evaluating and upgrading my skills to stay with the latest cutting-edge web technologies.
               </p>
             </div>
             <div className="col-6" data-aos="fade-left">
