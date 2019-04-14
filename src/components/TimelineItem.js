@@ -5,6 +5,7 @@ const TimelineItem = ({
   timeStamp,
   description,
   timeLinePosition,
+  marginTop
 }) => {
   const [toggle, setToggle] = useState('Details')
 
@@ -51,7 +52,7 @@ const TimelineItem = ({
             <p>{timeStamp}</p>
           </div>
           <div class={`timeline-details`}>
-            <div class={toggle === 'Details' ? 'hide' : ''} dangerouslySetInnerHTML={{ __html: description }} />
+            <div class={toggle === 'Details' ? '' : 'show'} dangerouslySetInnerHTML={{ __html: description }} style={{marginTop: marginTop}} />
           </div>
           <button className="btn" onClick={onClickToggle} value={toggle}>
             {toggle}

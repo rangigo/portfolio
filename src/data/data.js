@@ -147,6 +147,7 @@ export const experiences = [
     RxJS, C#, .NET, RabbitMQ, Jasmine, Karma, NUnit, Bamboo, Octopus
   </p>`,
     timeLinePosition: 'left',
+    marginTop: '-100%'
   },
   {
     jobTitle: 'Web Developer @ Integrify',
@@ -162,5 +163,6 @@ export const experiences = [
                     </p>
       `,
     timeLinePosition: 'right',
+    marginTop: '-30%',
   },
 ]

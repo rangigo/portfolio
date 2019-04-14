@@ -1199,6 +1199,7 @@ p {
 
   &.style2 {
     @include dark(#333);
+    @include fullVHSection();
     background-attachment: fixed, fixed;
     background-image: url('../images/overlay1.png'), url('../images/header.jpg');
     background-size: auto, cover;
@@ -1827,13 +1828,12 @@ $timeline-color: $primary-color;
       .timeline-details {
         overflow: hidden;
 
-        div {
-          margin-top: 0;
+        div { 
           transition: all .7s;
         }
 
-        div.hide {
-          margin-top: -100%;
+        div.show {
+          margin-top: 0 !important;
           transition: all .7s;
         }
       }
