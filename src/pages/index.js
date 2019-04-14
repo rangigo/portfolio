@@ -121,8 +121,8 @@ class Homepage extends React.Component {
               <p data-aos="zoom-out">
                 I love development and design. I'm most comfortable with
                 front-end technologies like React and Angular, but I have also
-                done a considerable amount of work in back-end technologies like
-                Node.js or .NET
+                done a considerable amount of work in back-end in
+                Node.js and .NET
               </p>
               <div className="skills" data-aos="zoom-out">
                 <h4>Front-End</h4>
