@@ -1165,7 +1165,7 @@ button,
 }
 
 @mixin fullVHSection() {
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 700px) {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -1188,6 +1188,13 @@ p {
     &.special {
       height: 100% !important;
     }
+
+    .avatar {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &.style2 {
@@ -1195,6 +1202,12 @@ p {
     background-attachment: fixed, fixed;
     background-image: url('../images/overlay1.png'), url('../images/header.jpg');
     background-size: auto, cover;
+  }
+
+  &.style3 {
+    background-attachment: fixed, fixed;
+    background-image: url('../images/trianglify2.png');
+    background-size: cover;
   }
 }
 
@@ -1470,6 +1483,13 @@ p {
 
   #one {
     text-align: center;
+
+    .image {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   /* Two */
@@ -1685,5 +1705,224 @@ p {
 
   #footer {
     @include padding(2em, 1em, (0, 0, _size(element-margin), 0));
+  }
+}
+// Variables
+$bg-body: #f9f9f9;
+
+$red: #ee4d4d;
+$blue: #2b2e48;
+$primary-color: rgb(48, 144, 182);
+$secondary-color: $blue;
+
+// Timeline
+$timeline-color: $primary-color;
+
+// Mixins and Placeholders
+%clearfix {
+  &:after,
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
+@mixin prefix($prop, $val) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '' {
+    #{$prefix}#{$prop}: $val;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#four {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 1.5em;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 1em;
+    }
+
+    button {
+      height: auto;
+    }
+  }
+}
+
+// Timeline
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 10px;
+  @include prefix(transition, all 0.4s ease);
+
+  .time-stamp {
+    color: grey;
+    p {
+      font-size: 0.9em;
+      margin: 15px 0;
+    }
+  }
+
+  &:before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: $timeline-color;
+    left: 50%;
+    top: 0;
+    position: absolute;
+  }
+
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+    width: 100%;
+  }
+
+  .timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+    @extend %clearfix;
+    width: 100%;
+
+    .timeline-icon {
+      background: $timeline-color;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      overflow: hidden;
+      margin-left: -23px;
+      @include prefix(border-radius, 50%);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .timeline-content {
+      width: 45%;
+      background: #fff;
+      padding: 20px;
+      @include prefix(box-shadow, 0 3px 0 rgba(0, 0, 0, 0.1));
+      @include prefix(border-radius, 5px);
+      @include prefix(transition, all 0.3s ease);
+
+      .timeline-details {
+        overflow: hidden;
+
+        div {
+          margin-top: 0;
+          transition: all .7s;
+        }
+
+        div.hide {
+          margin-top: -100%;
+          transition: all .7s;
+        }
+      }
+
+      h2 {
+        padding: 15px;
+        background: $timeline-color;
+        color: #fff;
+        margin: -20px -20px 0 -20px;
+        font-weight: 300;
+        @include prefix(border-radius, 3px 3px 0 0);
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 45%;
+        top: 20px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid $timeline-color;
+      }
+
+      &.right {
+        float: right;
+
+        &:before {
+          content: '';
+          right: 45%;
+          left: inherit;
+          border-left: 0;
+          border-right: 7px solid $timeline-color;
+        }
+      }
+    }
+  }
+}
+
+// Buttons
+.btn {
+  padding: 5px 15px;
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid lighten($primary-color, 10%);
+  color: lighten($primary-color, 10%) !important;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  @include prefix(border-radius, 5px);
+  @include prefix(transition, background 0.3s ease);
+  @include prefix(box-shadow, 2px 2px 0 lighten($primary-color, 10%));
+
+  &:hover {
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+    @include prefix(box-shadow, 2px 2px 0 transparent);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+    &:before {
+      left: 0;
+    }
+
+    .timeline-item {
+      .timeline-content {
+        width: 90%;
+        float: right;
+
+        &:before,
+        &.right:before {
+          left: 10%;
+          margin-left: -6px;
+          border-left: 0;
+          border-right: 7px solid $timeline-color;
+        }
+      }
+
+      .timeline-icon {
+        left: 0;
+      }
+    }
   }
 }

@@ -8,12 +8,12 @@ import Layout from '../components/layout'
 
 import cv from '../assets/images/cv.jpeg'
 import Project from '../components/Project'
-import projects from '../data/data'
-import ReduxLogo from '../components/svg/ReduxLogo'
+import { projects, experiences } from '../data/data'
 import GraphQLLogo from '../components/svg/GraphQLLogo'
 import JestLogo from '../components/svg/JestLogo'
 import ApolloLogo from '../components/svg/ApolloLogo'
 import UnityLogo from '../components/svg/UnityLogo'
+import TimelineItem from '../components/TimelineItem';
 
 class Homepage extends React.Component {
   sectionOneRef = React.createRef()
@@ -58,18 +58,22 @@ class Homepage extends React.Component {
                 game programming and robot controlling.
               </p>
               <p>
-                JavaScript is my bread and butter as it allowed me to get things into action quickly because of its flexibility.
-                 In addition to it, I am also familiar with Java/JavaEE, C# and .NET as server-side scripting languages,
-                  and exposed to RabbitMQ in the context of micro-services system.
-                  With those tools at my hand, progressive web application & scalable websites are often the final goals that I want to achieve while developing software.
+                JavaScript is my bread and butter as it allowed me to get things
+                into action quickly because of its flexibility. In addition to
+                it, I am also familiar with Java/JavaEE, C# and .NET as
+                server-side scripting languages, and exposed to RabbitMQ in the
+                context of micro-services system. With those tools at my hand,
+                progressive web application & scalable websites are often the
+                final goals that I want to achieve while developing software.
               </p>
               <p>
-                As someone who takes responsibility for my own personal development,
-                 I am continually evaluating and upgrading my skills to stay with the latest cutting-edge web technologies.
+                As someone who takes responsibility for my own personal
+                development, I am continually evaluating and upgrading my skills
+                to stay with the latest cutting-edge web technologies.
               </p>
             </div>
             <div className="col-6" data-aos="fade-left">
-              <span className="image fit">
+              <span className="image fit avatar">
                 <img src={cv} alt="avatar" />
               </span>
             </div>
@@ -84,9 +88,7 @@ class Homepage extends React.Component {
                   <span className="icon major devicon-react-original colored" />
                 </li>
                 <li data-aos="zoom-out">
-                  <span className="icon major">
-                    <ReduxLogo />
-                  </span>
+                  <span className="icon major devicon-angularjs-plain colored" />
                 </li>
                 <li data-aos="zoom-out">
                   <span className="icon major devicon-nodejs-plain colored" />
@@ -95,7 +97,7 @@ class Homepage extends React.Component {
                   <span className="icon major devicon-sass-original colored" />
                 </li>
                 <li data-aos="zoom-out">
-                  <span className="icon major devicon-javascript-plain colored" />
+                  <span className="icon major devicon-dot-net-plain-wordmark colored" />
                 </li>
                 <li data-aos="zoom-out">
                   <span className="icon major">
@@ -118,9 +120,9 @@ class Homepage extends React.Component {
               </header>
               <p data-aos="zoom-out">
                 I love development and design. I'm most comfortable with
-                front-end technologies like React and Redux, but I have also
-                done a lot of work in back-end technologies like Node.js and
-                Java EE.
+                front-end technologies like React and Angular, but I have also
+                done a considerable amount of work in back-end technologies like
+                Node.js or .NET
               </p>
               <div className="skills" data-aos="zoom-out">
                 <h4>Front-End</h4>
@@ -130,8 +132,8 @@ class Homepage extends React.Component {
                     data-tip="React"
                   />
                   <span
-                    className="icon minor devicon-javascript-plain colored"
-                    data-tip="JavaScript"
+                    className="icon minor devicon-angularjs-plain colored"
+                    data-tip="Angular"
                   />
                   <span
                     className="icon minor devicon-sass-original colored"
@@ -169,6 +171,10 @@ class Homepage extends React.Component {
                   <span
                     className="icon minor devicon-express-original-wordmark"
                     data-tip="Express"
+                  />
+                  <span
+                    className="icon minor devicon-dot-net-plain-wordmark colored"
+                    data-tip=".NET"
                   />
                   <span
                     className="icon minor devicon-java-plain colored"
@@ -218,6 +224,27 @@ class Homepage extends React.Component {
           </div>
         </section>
 
+        <section id="four" className="main style1 style3 special">
+          <div className="container">
+            <header className="major">
+              <h2>
+                <strong>
+                  &#60;Experiences{' '}
+                  <span role="img" aria-label="skills">
+                    💼
+                  </span>{' '}
+                  &#47;&#62;
+                </strong>
+              </h2>
+            </header>
+            <div class="container">
+              <div id="timeline">
+                {experiences.map(el => <TimelineItem key={el.jobTitle} {...el} />)}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="three" className="main style1 special">
           <div style={{ flex: 0.8 }}>
             <div className="projects-header">
@@ -232,10 +259,7 @@ class Homepage extends React.Component {
                   </strong>
                 </h2>
               </header>
-              <p>
-                Most of my work is in web development, but I am also really
-                proud of my game & robot projects.
-              </p>
+              <p>Some of the cool stuffs that I built 😎</p>
             </div>
             <div className="projects">
               {projects.map(el => (
@@ -244,15 +268,6 @@ class Homepage extends React.Component {
             </div>
           </div>
         </section>
-
-        {/* <section id="four" className="main style2 special">
-          <div className="container">
-            <header className="major">
-              <h2>Contact</h2>
-            </header>
-            <p>Thanks for visiting my website! If you have an offer or just want to chat, send me an email!</p>
-          </div>
-        </section> */}
       </Layout>
     )
   }

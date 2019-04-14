@@ -1,4 +1,4 @@
-const data = [
+export const projects = [
   {
     flex: 0.333,
     backgroundColor: '#E2BAA0',
@@ -120,4 +120,47 @@ const data = [
   },
 ]
 
-export default data
+export const experiences = [
+  {
+    jobTitle: 'Software Engineer @ Nord Pool',
+    timeStamp: '🕑 01.2019 - Present',
+    description: `<p>
+    Work in an international team of 10 members including developers and
+    quality assurance engineers to maintain the trading platform auction
+    based of Nord Pool.
+  </p>
+  <p>
+    <strong>Responsibility:</strong>
+  </p>
+  <p>
+    - Understand the electricity market business and Nord Pool trading's
+    platform
+  </p>
+  <p>- Develop new features and maintain the auction system</p>
+  <p>- Take part in SAFe as a solution to Scrum at enterprise level</p>
+  <p>
+    <strong>Projects:</strong> Member UI, Operator UI, Auction
+    Orchestrator, OrderManager, UserManager
+  </p>
+  <p>
+    <strong>Technologies:</strong> TypeScript, AngularJS/Angular 2+,
+    RxJS, C#, .NET, RabbitMQ, Jasmine, Karma, NUnit, Bamboo, Octopus
+  </p>`,
+    timeLinePosition: 'left',
+  },
+  {
+    jobTitle: 'Web Developer @ Integrify',
+    timeStamp: '🕑 04.2018 - 10.2018',
+    description: `
+    <p>
+                      Be a part of Integrify's coding bootcamp program and
+                      participate in developing company's internal projects.
+                    </p>
+                    <p>
+                      <strong>Technologies</strong>: React, Redux, Jest, Enzyme,
+                      Node.js, Express, SASS, GraphQL
+                    </p>
+      `,
+    timeLinePosition: 'right',
+  },
+]
