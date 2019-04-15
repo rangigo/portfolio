@@ -1199,7 +1199,6 @@ p {
 
   &.style2 {
     @include dark(#333);
-    @include fullVHSection();
     background-attachment: fixed, fixed;
     background-image: url('../images/overlay1.png'), url('../images/header.jpg');
     background-size: auto, cover;
