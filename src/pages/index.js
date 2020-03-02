@@ -13,7 +13,7 @@ import GraphQLLogo from '../components/svg/GraphQLLogo'
 import JestLogo from '../components/svg/JestLogo'
 import ApolloLogo from '../components/svg/ApolloLogo'
 import UnityLogo from '../components/svg/UnityLogo'
-import TimelineItem from '../components/TimelineItem';
+import TimelineItem from '../components/TimelineItem'
 
 class Homepage extends React.Component {
   sectionOneRef = React.createRef()
@@ -52,10 +52,12 @@ class Homepage extends React.Component {
                 </h2>
               </header>
               <p>
-                I am a passionate programmer who takes pleasure in tinkering
-                with various computer-related fields. Before choosing web
-                development as my main career path, I have had experiences in
-                game programming and robot controlling.
+                I am a problem solver who takes pleasure in tinkering with
+                various computer-related fields. I have had experiences in game
+                programming and robot controlling doing first year projects in
+                my university, but eventually I decided to pick up software
+                engineering as my main career path. I am also comfortable
+                working in agile environment (Scrum/SAFe).
               </p>
               <p>
                 JavaScript is my bread and butter as it allowed me to get things
@@ -121,8 +123,8 @@ class Homepage extends React.Component {
               <p data-aos="zoom-out">
                 I love development and design. I'm most comfortable with
                 front-end technologies like React and Angular, but I have also
-                done a considerable amount of work in back-end in
-                Node.js and .NET
+                done a considerable amount of work in back-end in Node.js and
+                .NET
               </p>
               <div className="skills" data-aos="zoom-out">
                 <h4>Front-End</h4>
@@ -239,7 +241,9 @@ class Homepage extends React.Component {
             </header>
             <div class="container">
               <div id="timeline">
-                {experiences.map(el => <TimelineItem key={el.jobTitle} {...el} />)}
+                {experiences.map(el => (
+                  <TimelineItem key={el.jobTitle} {...el} />
+                ))}
               </div>
             </div>
           </div>

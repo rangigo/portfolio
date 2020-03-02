@@ -94,14 +94,14 @@ export const projects = [
     img:
       'https://s3.eu-west-2.amazonaws.com/integrify-system-assets/logo-white.png',
     imgWidth: '50%',
-    link: 'https://integrify.network/',
+    link: 'https://github.com/rangigo/phrazer',
     projectTitle: '',
-    itemTitle: 'Integrify Assessment Tool',
+    itemTitle: 'Phrazer',
     tech: 'Front-End',
     date: 'August 2018',
     status: 'On-going',
     description:
-      'Integrify internal student assessment tool. I worked mainly on the login/register process.',
+      'React Native Application: Personal dictionary to memorize your daily phrases.',
   },
   {
     flex: 0.333,
@@ -118,11 +118,26 @@ export const projects = [
     status: 'Finished',
     description: 'Controlling and optimizing algorithm for Polulu Zumo Robot.',
   },
+  {
+    flex: 0.333,
+    backgroundColor: 'rgb(186, 227, 255)',
+    itemTitleColor: 'rgb(186, 227, 255)',
+    img:
+      '',
+    imgWidth: '50%',
+    link: 'https://github.com/rangigo/react-form-validation',
+    projectTitle: 'react-form-validation',
+    itemTitle: 'Arduino Robot',
+    tech: 'C',
+    date: 'January 2017',
+    status: 'Finished',
+    description: 'Pet project to study behavior of multistep form validation utilizng React/Redux.',
+  },
 ]
 
 export const experiences = [
   {
-    jobTitle: 'Software Engineer @ Nord Pool',
+    jobTitle: 'Software Engineering Trainee @ Nord Pool',
     timeStamp: '🕑 01.2019 - Present',
     description: `<p>
     Work in an international team of 10 members including developers and
