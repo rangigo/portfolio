@@ -89,12 +89,12 @@ export const projects = [
   {
     flex: 0.333,
     gradientBg: true,
-    backgroundColor: 'linear-gradient(45deg, #ffc15e, #60584b)',
-    itemTitleColor: '#FFB700',
+    backgroundColor: 'linear-gradient(45deg, #3FBFB8, rgb(196, 255, 244))',
+    itemTitleColor: 'rgb(58, 255, 244)',
     img:
-      'https://s3.eu-west-2.amazonaws.com/integrify-system-assets/logo-white.png',
-    imgWidth: '50%',
-    link: 'https://github.com/rangigo/phrazer',
+      'https://gitlab.com/MartynasGudaitis/Phrazer/-/raw/master/client/phrazerIcon.png',
+    imgWidth: '30%',
+    link: 'https://gitlab.com/MartynasGudaitis/Phrazer',
     projectTitle: '',
     itemTitle: 'Phrazer',
     tech: 'Front-End',
@@ -127,11 +127,11 @@ export const projects = [
     imgWidth: '50%',
     link: 'https://github.com/rangigo/react-form-validation',
     projectTitle: 'react-form-validation',
-    itemTitle: 'Arduino Robot',
-    tech: 'C',
-    date: 'January 2017',
+    itemTitle: 'Multistep form in React',
+    tech: 'React',
+    date: '2018',
     status: 'Finished',
-    description: 'Pet project to study behavior of multistep form validation utilizng React/Redux.',
+    description: 'Pet project to study behavior of multistep form validation utilizing React/Redux.',
   },
 ]
 
