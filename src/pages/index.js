@@ -197,6 +197,22 @@ class Homepage extends React.Component {
                 <h4>Misc</h4>
                 <div className="minor-icons">
                   <span
+                    class="icon minor devicon-typescript-plain colored"
+                    data-tip="TypeScript"
+                  />
+                  <span
+                    className="icon minor devicon-docker-plain colored"
+                    data-tip="Docker"
+                  />
+                  <span
+                    className="icon minor devicon-confluence-plain colored"
+                    data-tip="Confluence"
+                  />
+                  <span
+                    className="icon minor devicon-jasmine-plain colored"
+                    data-tip="Jasmine"
+                  />
+                  <span
                     className="icon minor devicon-c-plain colored"
                     data-tip="C"
                   />
