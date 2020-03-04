@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 
 import Layout from '../components/layout'
 
-import cv from '../assets/images/cv.jpeg'
+import cv from '../assets/images/cv2.jpg'
 import Project from '../components/Project'
 import { projects, experiences } from '../data/data'
 import GraphQLLogo from '../components/svg/GraphQLLogo'
@@ -52,12 +52,11 @@ class Homepage extends React.Component {
                 </h2>
               </header>
               <p>
-                I am a problem solver who takes pleasure in tinkering with
-                various computer-related fields. I have had experiences in game
-                programming and robot controlling doing first year projects in
-                my university, but eventually I decided to pick up software
-                engineering as my main career path. I am also comfortable
-                working in agile environment (Scrum/SAFe).
+                I am a software developer with hands-on experience in JavaScript
+                related stacks and .NET development. Exposed to microservices
+                system, I am comfortable in building/maintaining scalable
+                solutions for complex business problem with proven track of
+                record.
               </p>
               <p>
                 JavaScript is my bread and butter as it allowed me to get things

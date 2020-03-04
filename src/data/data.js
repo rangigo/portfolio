@@ -126,7 +126,7 @@ export const projects = [
       '',
     imgWidth: '50%',
     link: 'https://github.com/rangigo/react-form-validation',
-    projectTitle: 'react-form-validation',
+    projectTitle: 'react-form',
     itemTitle: 'Multistep form in React',
     tech: 'React',
     date: '2018',
