@@ -137,7 +137,7 @@ export const projects = [
 
 export const experiences = [
   {
-    jobTitle: 'Software Engineering Trainee @ Nord Pool',
+    jobTitle: 'Software Engineer @ Nord Pool',
     timeStamp: '🕑 01.2019 - Present',
     description: `<p>
     Work in an international team of 10 members including developers and
