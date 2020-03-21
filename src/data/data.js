@@ -166,7 +166,7 @@ export const experiences = [
   },
   {
     jobTitle: 'Web Developer @ Integrify',
-    timeStamp: '🕑 04.2018 - 10.2018',
+    timeStamp: '🕑 04.2018 - 12.2018',
     description: `
     <p>
                       Be a part of Integrify's coding bootcamp program and
