@@ -10,7 +10,6 @@ const TimelineItem = ({
   const [toggle, setToggle] = useState('Details')
 
   const onClickToggle = ev => {
-    console.log(ev.target.value)
     const btnText = ev.target.value
     if (btnText === 'Details') {
       setToggle('Hide')

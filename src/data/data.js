@@ -122,8 +122,7 @@ export const projects = [
     flex: 0.333,
     backgroundColor: 'rgb(186, 227, 255)',
     itemTitleColor: 'rgb(186, 227, 255)',
-    img:
-      '',
+    img: '',
     imgWidth: '50%',
     link: 'https://github.com/rangigo/react-form-validation',
     projectTitle: 'react-form',
@@ -131,7 +130,8 @@ export const projects = [
     tech: 'React',
     date: '2018',
     status: 'Finished',
-    description: 'Pet project to study behavior of multistep form validation utilizing React/Redux.',
+    description:
+      'Pet project to study behavior of multistep form validation utilizing React/Redux.',
   },
 ]
 
@@ -154,15 +154,11 @@ export const experiences = [
   <p>- Develop new features and maintain the auction system</p>
   <p>- Take part in SAFe as a solution to Scrum at enterprise level</p>
   <p>
-    <strong>Projects:</strong> Member UI, Operator UI, Auction
-    Orchestrator, OrderManager, UserManager
-  </p>
-  <p>
     <strong>Technologies:</strong> TypeScript, AngularJS/Angular 2+,
-    RxJS, C#, .NET, RabbitMQ, Jasmine, Karma, NUnit, Bamboo, Octopus
+    RxJS, C#, .NET, RabbitMQ, Jasmine, Karma, NUnit, Bamboo, Octopus, Docker/K8s
   </p>`,
     timeLinePosition: 'left',
-    marginTop: '-100%'
+    marginTop: '-100%',
   },
   {
     jobTitle: 'Web Developer @ Integrify',
