@@ -823,6 +823,7 @@ ul {
       right: 0;
       margin: auto;
       text-align: center;
+      white-space: nowrap;
     }
 
     .description {
@@ -1827,13 +1828,13 @@ $timeline-color: $primary-color;
       .timeline-details {
         overflow: hidden;
 
-        div { 
-          transition: all .7s;
+        div {
+          transition: all 0.7s;
         }
 
         div.show {
           margin-top: 0 !important;
-          transition: all .7s;
+          transition: all 0.7s;
         }
       }
 
