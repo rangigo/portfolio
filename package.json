@@ -7,14 +7,14 @@
     "aos": "^2.3.4",
     "gatsby": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
-    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-offline": "^3.2.31",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
     "node-sass": "^4.9.3",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0",
-    "react-tooltip": "^3.9.0"
+    "react-helmet": "^6.1.0",
+    "react-tooltip": "^4.2.10"
   },
   "keywords": [
     "gatsby"
@@ -24,10 +24,12 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upgrade-interactive": "npm-check --update"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "npm-check": "^5.9.2",
+    "prettier": "^2.1.2"
   },
   "repository": {
     "type": "git",
