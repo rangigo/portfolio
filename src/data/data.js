@@ -53,8 +53,7 @@ export const projects = [
     tech: 'Hackaround',
     date: 'August 2018',
     status: 'On-going...',
-    description:
-      'A custom Angular component to render JSON based content',
+    description: 'A custom Angular component to render JSON based content',
   },
   {
     flex: 0.333,
@@ -137,8 +136,15 @@ export const projects = [
 
 export const experiences = [
   {
+    jobTitle: 'Software Engineer @ Zervant',
+    timeStamp: '08.2020 - Present',
+    description: `<p>Helping entrepreneurs succeed.</p>`,
+    timeLinePosition: 'right',
+    marginTop: '-5%',
+  },
+  {
     jobTitle: 'Software Engineer @ Nord Pool',
-    timeStamp: '🕑 01.2019 - Present',
+    timeStamp: '01.2019 - 07.2020',
     description: `<p>
     Work in an international team of 10 members including developers and
     quality assurance engineers to maintain the trading platform auction

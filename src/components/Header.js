@@ -32,7 +32,7 @@ class Header extends React.Component {
               Hi, I'm <strong>Phuoc Nguyen!</strong>
             </h1>
             <h3>
-              I'm a 123456789x rockstar software engineer
+              I am a 123456789x rockstar software engineer
             </h3>
             <h3>Eternal Learner</h3>
             <h3> (React * TypeScript) ^ AWS ~ Serverless</h3>
