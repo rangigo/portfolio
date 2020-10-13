@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom'
 
 class Header extends React.Component {
   headerRef = React.createRef()
-  
-  handleClick = e => {
+
+  handleClick = (e) => {
     e.preventDefault()
     const { sectionOneRef } = this.props
     const sectionOneDomNode = ReactDOM.findDOMNode(sectionOneRef.current)
@@ -18,12 +18,24 @@ class Header extends React.Component {
     return (
       <section id="header" ref={this.headerRef}>
         <div className="inner">
-          <div style={{ margin: 'auto' }}>
+          <div
+            style={{
+              margin: 'auto',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-around',
+              alignContent: 'space-around',
+            }}
+          >
             <span className="icon major devicon-react-original colored" />
             <h1>
               Hi, I'm <strong>Phuoc Nguyen!</strong>
             </h1>
-            <h3>A Front-End to Full-Stack Developer.</h3>
+            <h3>
+              I'm a 123456789x rockstar software engineer
+            </h3>
+            <h3>Eternal Learner</h3>
+            <h3> (React * TypeScript) ^ AWS ~ Serverless</h3>
           </div>
           <ul className="actions">
             <li>

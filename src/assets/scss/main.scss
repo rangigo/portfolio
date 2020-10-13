@@ -1305,6 +1305,10 @@ p {
         @include vendor('transform', 'translateY(30em)');
         opacity: 0;
       }
+
+      h3 {
+        margin: 0;
+      }
     }
 
     &:after {
