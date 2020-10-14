@@ -45,7 +45,7 @@ class Homepage extends React.Component {
                   <strong>
                     &#60;About me{' '}
                     <span role="img" aria-label="about">
-                      👨🏻‍💻
+                      👤
                     </span>{' '}
                     &#47;&#62;
                   </strong>
