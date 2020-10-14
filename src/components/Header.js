@@ -31,11 +31,8 @@ class Header extends React.Component {
             <h1>
               Hi, I'm <strong>Phuoc Nguyen!</strong>
             </h1>
-            <h3>
-              I am a 123456789x rockstar software engineer
-            </h3>
             <h3>Eternal Learner</h3>
-            <h3> (React * TypeScript) ^ AWS ~ Serverless</h3>
+            <h3>(React * TypeScript) ^ AWS ~ Serverless</h3>
           </div>
           <ul className="actions">
             <li>
