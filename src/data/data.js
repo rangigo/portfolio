@@ -51,7 +51,7 @@ export const projects = [
     projectTitle: 'JSON2Component',
     itemTitle: 'JSON2Component',
     tech: 'Hackaround',
-    date: 'August 2018',
+    date: 'October 2020',
     status: 'On-going...',
     description: 'A custom Angular component to render JSON based content',
   },
