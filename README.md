@@ -6,4 +6,4 @@ phuoc.dev
 ## Todo
 Add link preview
 
-### JAMStack FTW
+### Jamstack FTW
