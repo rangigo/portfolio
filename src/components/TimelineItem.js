@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 export function useViewWidth() {
-  const [viewWidth, setViewWidth] = useState(window.innerWidth)
+  const [viewWidth, setViewWidth] = useState(0)
 
   useEffect(() => {
     const updateViewWidth = () => {
