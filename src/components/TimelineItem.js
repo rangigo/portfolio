@@ -1,15 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
+export function useViewWidth() {
+  const [viewWidth, setViewWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const updateViewWidth = () => {
+      setViewWidth(window.innerWidth)
+    }
+    window.addEventListener('resize', updateViewWidth)
+
+    return () => window.removeEventListener('resize', updateViewWidth)
+  }, [])
+
+  return viewWidth
+}
 
 const TimelineItem = ({
   jobTitle,
   timeStamp,
   description,
   timeLinePosition,
-  marginTop
+  marginTop,
 }) => {
   const [toggle, setToggle] = useState('Details')
 
-  const onClickToggle = ev => {
+  const onClickToggle = (ev) => {
     const btnText = ev.target.value
     if (btnText === 'Details') {
       setToggle('Hide')
@@ -17,6 +32,8 @@ const TimelineItem = ({
       setToggle('Details')
     }
   }
+
+  const dynamicMarginTop = useViewWidth() < 400 ? marginTop * 3 : marginTop
 
   return (
     <div className="col-6" data-aos={`fade-${timeLinePosition}`}>
@@ -51,7 +68,11 @@ const TimelineItem = ({
             <p>{timeStamp}</p>
           </div>
           <div class={`timeline-details`}>
-            <div class={toggle === 'Details' ? '' : 'show'} dangerouslySetInnerHTML={{ __html: description }} style={{marginTop: marginTop}} />
+            <div
+              class={toggle === 'Details' ? '' : 'show'}
+              dangerouslySetInnerHTML={{ __html: description }}
+              style={{ marginTop: `${dynamicMarginTop}%` }}
+            />
           </div>
           <button className="btn" onClick={onClickToggle} value={toggle}>
             {toggle}

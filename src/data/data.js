@@ -140,7 +140,7 @@ export const experiences = [
     timeStamp: '08.2020 - Present',
     description: `<p>Helping entrepreneurs succeed.</p>`,
     timeLinePosition: 'right',
-    marginTop: '-5%',
+    marginTop: -5,
   },
   {
     jobTitle: 'Software Engineer @ Nord Pool',
@@ -164,7 +164,7 @@ export const experiences = [
     RxJS, C#, .NET, RabbitMQ, Jasmine, Karma, NUnit, Bamboo, Octopus, Docker/K8s
   </p>`,
     timeLinePosition: 'left',
-    marginTop: '-100%',
+    marginTop: -100,
   },
   {
     jobTitle: 'Web Developer @ Integrify',
@@ -180,6 +180,6 @@ export const experiences = [
                     </p>
       `,
     timeLinePosition: 'right',
-    marginTop: '-30%',
+    marginTop: -30,
   },
 ]
