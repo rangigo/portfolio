@@ -28,7 +28,7 @@ class Footer extends React.Component {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/ur.salmiakki/"
+              href="https://www.instagram.com/ur_salmiakki/"
               target="_blank"
               rel="noopener noreferrer"
               className="icon alt fab fa-instagram"

@@ -3,4 +3,7 @@ My personal portfolio. Powered by Gatsby. Deployed by Netlify.
 
 phuoc.dev
 
-### JAMStack FTW
+## Todo
+Add link preview
+
+### Jamstack FTW
