@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// import AngularLogo from './svg/AngularLogo'
-
 class Header extends React.Component {
   headerRef = React.createRef()
 
@@ -29,9 +27,8 @@ class Header extends React.Component {
               alignContent: 'space-around',
             }}
           >
-            {/* <AngularLogo /> */}
+            <span className="icon minor devicon-angularjs-plain colored" />
             <span className="icon major devicon-react-original colored" />
-            {/* <span className="icon major devicon-vuejs-original colored" /> */}
             <h1>
               Hi, I'm <strong>Phuoc Nguyen!</strong>
             </h1>
