@@ -34,7 +34,7 @@ class Header extends React.Component {
             </h1>
             <h3>open-sourcerer | practicing mindfulness</h3>
             <h3>
-              <a href="https://jamstack.org" target="_blank">
+              <a href="https://jamstack.org" target="_blank" rel="noreferrer">
                 Jamstack
               </a>{' '}
               Evangelist✨
