@@ -33,7 +33,12 @@ class Header extends React.Component {
               Hi, I'm <strong>Phuoc Nguyen!</strong>
             </h1>
             <h3>open-sourcerer | practicing mindfulness</h3>
-            <h3>(React * TypeScript) ^ AWS ~ Serverless</h3>
+            <h3>
+              <a href="https://jamstack.org" target="_blank">
+                Jamstack
+              </a>{' '}
+              Evangelist✨
+            </h3>
           </div>
           <ul className="actions">
             <li>
