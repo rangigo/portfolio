@@ -138,7 +138,7 @@ export const experiences = [
   {
     jobTitle: 'Software Engineer @ Zervant',
     timeStamp: '08.2020 - Present',
-    description: `<p>Helping entrepreneurs succeed.</p>`,
+    description: `<p>Building the best invoicing software for entrepreneurs in EU.</p>`,
     timeLinePosition: 'right',
     marginTop: -5,
   },
