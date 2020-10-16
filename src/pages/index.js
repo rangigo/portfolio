@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 
 import Layout from '../components/layout'
 
-import cv from '../assets/images/cv2.jpg'
+import cv from '../assets/images/hash.png'
 import Project from '../components/Project'
 import { projects, experiences } from '../data/data'
 import GraphQLLogo from '../components/svg/GraphQLLogo'
