@@ -32,7 +32,16 @@ class Header extends React.Component {
             <h1>
               Hi, I'm <strong>Phuoc Nguyen!</strong>
             </h1>
-            <h3>open-sourcerer | practicing mindfulness</h3>
+            <h3>
+              open-sourcerer | practicing{' '}
+              <a
+                href="https://www.mindful.org/meditation/mindfulness-getting-started/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                mindfulness
+              </a>
+            </h3>
             <h3>
               <a href="https://jamstack.org" target="_blank" rel="noreferrer">
                 Jamstack
