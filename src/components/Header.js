@@ -33,7 +33,15 @@ class Header extends React.Component {
               Hi, I'm <strong>Phuoc Nguyen!</strong>
             </h1>
             <h3>
-              open-sourcerer | practicing{' '}
+              Eternally{' '}
+              <a
+                href="https://www.youtube.com/watch?v=jZW7wnhsgbw"
+                target="_blank"
+                rel="noreferrer"
+              >
+                気になります
+              </a>{' '}
+              | practicing{' '}
               <a
                 href="https://www.mindful.org/meditation/mindfulness-getting-started/"
                 target="_blank"
