@@ -30,10 +30,17 @@ class Header extends React.Component {
             <span className="icon minor devicon-angularjs-plain colored" />
             <span className="icon major devicon-react-original colored" />
             <h1>
-              Hi, I'm <strong>Phuoc Nguyen!</strong>
+              Hi, I'm <strong>Thomas</strong>
             </h1>
             <h3>
-              open-sourcerer | practicing{' '}
+              <a
+                href="https://www.youtube.com/watch?v=jZW7wnhsgbw"
+                target="_blank"
+                rel="noreferrer"
+              >
+                気になります
+              </a>{' '}
+              | practicing{' '}
               <a
                 href="https://www.mindful.org/meditation/mindfulness-getting-started/"
                 target="_blank"
