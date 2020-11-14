@@ -197,7 +197,7 @@ class Homepage extends React.Component {
                 <h4>Misc</h4>
                 <div className="minor-icons">
                   <span
-                    class="icon minor devicon-typescript-plain colored"
+                    className="icon minor devicon-typescript-plain colored"
                     data-tip="TypeScript"
                   />
                   <span
@@ -254,7 +254,7 @@ class Homepage extends React.Component {
                 </strong>
               </h2>
             </header>
-            <div class="container">
+            <div className="container">
               <div id="timeline">
                 {experiences.map(el => (
                   <TimelineItem key={el.jobTitle} {...el} />

@@ -32,6 +32,10 @@
 body {
   background: _palette(bg);
 
+  .body {
+    overflow: hidden;
+  }
+
   .body.is-loading {
     *,
     *:before,

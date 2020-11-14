@@ -37,8 +37,8 @@ const TimelineItem = ({
 
   return (
     <div className="col-6" data-aos={`fade-${timeLinePosition}`}>
-      <div class="timeline-item">
-        <div class="timeline-icon">
+      <div className="timeline-item">
+        <div className="timeline-icon">
           <svg
             version="1.1"
             id="Layer_1"
@@ -62,14 +62,14 @@ const TimelineItem = ({
             />
           </svg>
         </div>
-        <div class={`timeline-content ${timeLinePosition}`}>
+        <div className={`timeline-content ${timeLinePosition}`}>
           <h2>{jobTitle}</h2>
-          <div class="time-stamp">
+          <div className="time-stamp">
             <p>{timeStamp}</p>
           </div>
-          <div class={`timeline-details`}>
+          <div className={`timeline-details`}>
             <div
-              class={toggle === 'Details' ? '' : 'show'}
+              className={toggle === 'Details' ? '' : 'show'}
               dangerouslySetInnerHTML={{ __html: description }}
               style={{ marginTop: `${dynamicMarginTop}%` }}
             />

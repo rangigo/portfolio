@@ -140,7 +140,7 @@ export const experiences = [
     timeStamp: '08.2020 - Present',
     description: `<p>Building the best invoicing software for entrepreneurs in EU.</p>`,
     timeLinePosition: 'right',
-    marginTop: -5,
+    marginTop: -7.5,
   },
   {
     jobTitle: 'Software Engineer @ Nord Pool',
