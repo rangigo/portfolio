@@ -31,10 +31,25 @@ class Homepage extends React.Component {
     return (
       <Layout sectionOneRef={this.sectionOneRef}>
         <Helmet title={siteTitle}>
+          <title>➕ ➖ ✖️ ➗</title>
+          <meta name="title" content="➕ ➖ ✖️ ➗" />
+          <meta name="description" content="Hi, I'm Thomas. A mindfulness practitioner & software engineer."/>
+
+          <meta property="og:type" content="website"/>
+          <meta property="og:url" content="https://metatags.io/"/>
+          <meta property="og:title" content="➕ ➖ ✖️ ➗"/>
+          <meta property="og:description" content="Hi, I'm Thomas. A mindfulness practitioner & software engineer."/>
+          <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
+
+          <meta property="twitter:card" content="summary_large_image"/>
+          <meta property="twitter:url" content="https://metatags.io/"/>
+          <meta property="twitter:title" content="➕ ➖ ✖️ ➗"/>
+          <meta property="twitter:description" content="Hi, I'm Thomas. A mindfulness practitioner & software engineer."/>
+          <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
           <link
             rel="stylesheet"
             href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-          />
+          />ƒ
         </Helmet>
         <ReactTooltip place="bottom" type="light" effect="float" />
         <section id="one" className="main style1" ref={this.sectionOneRef}>
@@ -256,7 +271,7 @@ class Homepage extends React.Component {
             </header>
             <div className="container">
               <div id="timeline">
-                {experiences.map(el => (
+                {experiences.map((el) => (
                   <TimelineItem key={el.jobTitle} {...el} />
                 ))}
               </div>
@@ -281,7 +296,7 @@ class Homepage extends React.Component {
               <p>Some of the cool stuffs that I built 😎</p>
             </div>
             <div className="projects">
-              {projects.map(el => (
+              {projects.map((el) => (
                 <Project {...el} key={el.link} />
               ))}
             </div>
