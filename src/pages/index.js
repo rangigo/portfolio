@@ -33,12 +33,12 @@ class Homepage extends React.Component {
         <Helmet title={siteTitle}>
           `<title>➕ ➖ ✖️ ➗</title>
           <meta name="title" content="➕ ➖ ✖️ ➗" />
-          <meta name="description" content="Hi, I'm Thomas. A mindfulness practitioner & software engineer."/>
+          <meta name="description" content="Hi, I'm Paavo. A mindfulness practitioner & software engineer."/>
 
           <meta property="og:type" content="website"/>
           <meta property="og:url" content="https://phuoc.dev/"/>
           <meta property="og:title" content="➕ ➖ ✖️ ➗"/>
-          <meta property="og:description" content="Hi, I'm Thomas. A mindfulness practitioner & software engineer."/>
+          <meta property="og:description" content="Hi, I'm Paavo. A mindfulness practitioner & software engineer."/>
           <meta property="og:image" content="https://stevenhansel.s3-ap-southeast-1.amazonaws.com/hash2.png"/>
 
           <meta property="twitter:card" content="summary_large_image"/>
