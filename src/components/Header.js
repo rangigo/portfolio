@@ -30,7 +30,7 @@ class Header extends React.Component {
             <span className="icon minor devicon-angularjs-plain colored" />
             <span className="icon major devicon-react-original colored" />
             <h1>
-              Hi, I'm <strong>Thomas</strong>
+              Hi, I'm <strong>Paavo</strong>
             </h1>
             <h3>
               <a
