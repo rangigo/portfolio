@@ -33,27 +33,7 @@ class Header extends React.Component {
               Hi, I'm <strong>Paavo</strong>
             </h1>
             <h3>
-              <a
-                href="https://www.youtube.com/watch?v=jZW7wnhsgbw"
-                target="_blank"
-                rel="noreferrer"
-              >
-                気になります
-              </a>{' '}
-              | practicing{' '}
-              <a
-                href="https://www.mindful.org/meditation/mindfulness-getting-started/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                mindfulness
-              </a>
-            </h3>
-            <h3>
-              <a href="https://jamstack.org" target="_blank" rel="noreferrer">
-                Jamstack
-              </a>{' '}
-              Evangelist✨
+              A software engineer
             </h3>
           </div>
           <ul className="actions">

@@ -3,7 +3,7 @@ export const projects = [
     flex: 0.333,
     backgroundColor: '#E2BAA0',
     itemTitleColor: 'rgb(239, 223, 213)',
-    img: 'https://image.flaticon.com/icons/svg/198/198416.svg',
+    img: 'https://cdn-icons-png.flaticon.com/512/5787/5787016.png',
     imgWidth: '30%',
     link: 'https://github.com/rangigo/burger-app',
     projectTitle: '',
@@ -17,8 +17,7 @@ export const projects = [
     flex: 0.333,
     backgroundColor: '#2A303D',
     itemTitleColor: '#76D9FA',
-    img:
-      'https://github.com/rangigo/fetch-anime/blob/master/src/assets/logo.png?raw=true',
+    img: 'https://github.com/rangigo/fetch-anime/blob/master/src/assets/logo.png?raw=true',
     imgWidth: '50%',
     link: 'https://github.com/rangigo/fetch-anime',
     projectTitle: '',
@@ -59,7 +58,7 @@ export const projects = [
     flex: 0.333,
     backgroundColor: '#ffd987',
     itemTitleColor: '#F7CC65',
-    img: 'https://vidtub.herokuapp.com/img/logo.png',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/GNOME_Video_icon_2019.svg',
     imgWidth: '30%',
     link: 'https://github.com/rangigo/vidtube',
     projectTitle: '',
@@ -90,8 +89,7 @@ export const projects = [
     gradientBg: true,
     backgroundColor: 'linear-gradient(45deg, #3FBFB8, rgb(196, 255, 244))',
     itemTitleColor: 'rgb(58, 255, 244)',
-    img:
-      'https://gitlab.com/MartynasGudaitis/Phrazer/-/raw/master/client/phrazerIcon.png',
+    img: 'https://gitlab.com/MartynasGudaitis/Phrazer/-/raw/master/client/phrazerIcon.png',
     imgWidth: '30%',
     link: 'https://gitlab.com/MartynasGudaitis/Phrazer',
     projectTitle: '',
@@ -106,8 +104,7 @@ export const projects = [
     flex: 0.333,
     backgroundColor: 'rgb(186, 227, 255)',
     itemTitleColor: 'rgb(186, 227, 255)',
-    img:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/720px-Arduino_Logo.svg.png',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/720px-Arduino_Logo.svg.png',
     imgWidth: '50%',
     link: 'https://github.com/rangigo/Ardibot',
     projectTitle: '',
@@ -136,32 +133,53 @@ export const projects = [
 
 export const experiences = [
   {
+    jobTitle: 'Software Engineer @ Smartly.io',
+    timeStamp: '05.2021 - Present',
+    description: `<p>• Initially a part of the team building preview page for creative ads, later on got
+    merged into the team responsible for content sheet and asset UI management.</p>
+    <p>• Frequent collaborating with other engineers through pair-coding to develop
+    new features in a smartly way
+    </p>
+    <p>• Develop and maintain existing microservices architecture handling content
+    sheet back-end using NestJS framework.
+    </p>
+    <p>• Develop several UI repositories with React and redux-toolkit. Ensure
+    comprehensive testing with unit/integration test using react-testing-library
+    and E2E test using Cypress.</p>`,
+    timeLinePosition: 'left',
+    marginTop: -100,
+  },
+  {
     jobTitle: 'Software Engineer @ Zervant',
-    timeStamp: '08.2020 - Present',
-    description: `<p>Building the best invoicing software for entrepreneurs in EU.</p>`,
+    timeStamp: '08.2020 - 02.2021',
+    description: `<p>•Take part in the team responsible for building invoicing software for
+    entrepreneurs in EU</p>
+    <p>• Develop payment dispute integration with Stripe using Serverless, AWS
+    Lambda, DynamoDB & React
+    </p>
+    <p>• Introduce the team to new Redux pattern with redux-toolkit, reduce
+    boilerplate code and utilize data fetching & caching to improve UI
+    performance.
+    </p>
+    <p>• Migrate existing UI Enzyme tests to react-testing-library with best testing
+    practices</p>`,
     timeLinePosition: 'right',
-    marginTop: -7.5,
+    marginTop: -100,
   },
   {
     jobTitle: 'Software Engineer @ Nord Pool',
     timeStamp: '01.2019 - 07.2020',
-    description: `<p>
-    Work in an international team of 10 members including developers and
-    quality assurance engineers to maintain the trading platform auction
-    based of Nord Pool.
-  </p>
+    description: `
   <p>
-    <strong>Responsibility:</strong>
+  • Maintain and develop trading platform auction based for electricity market &
+  power exchange.  
   </p>
-  <p>
-    - Understand the electricity market business and Nord Pool trading's
-    platform
-  </p>
-  <p>- Develop new features and maintain the auction system</p>
-  <p>- Take part in SAFe as a solution to Scrum at enterprise level</p>
-  <p>
-    <strong>Technologies:</strong> TypeScript, AngularJS/Angular 2+,
-    RxJS, C#, .NET, RabbitMQ, Jasmine, Karma, NUnit, Bamboo, Octopus, Docker/K8s
+  <p>• Rewrite auction system's customer-facing application from scratch using
+  Angular, TypeScript, RxJS, SCSS, Material Design and .NET Core</p>
+  <p>• Develop multi-tenant theming API with SCSS, allow dynamic styling for user
+  interfaces based on customers' config.</p>
+  <p>• Improve test coverage for auction system with test automation development
+  in Node.js, Jasmine, Protractor.
   </p>`,
     timeLinePosition: 'left',
     marginTop: -100,
