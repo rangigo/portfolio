@@ -1,7 +1,7 @@
 # Portfolio
 My personal portfolio. Powered by Gatsby. Deployed by Netlify.
 
-[phuoc.dev](https://phuoc.dev)
+[https://panigo.netlify.app/](https://panigo.netlify.app/)
 
 ## Todo
 - Add link preview
