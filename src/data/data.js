@@ -135,7 +135,7 @@ export const projects = [
 export const experiences = [
   {
     jobTitle: 'Software Engineer @ Smartly.io',
-    timeStamp: '05.2021 - 01.2024',
+    timeStamp: '05.2021 - 04.2024',
     description: `<p>• Initially a part of the team building preview page for creative ads, later on got
     merged into the team responsible for content sheet and asset UI management.</p>
     <p>• Frequent collaborating with other engineers through pair-coding to develop
